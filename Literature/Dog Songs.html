@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dog Songs by Mary Oliver</title>
+    <style>
+    .Btn {
+        background-color: hwb(276 53% 23%);
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    td {
+        border-bottom: 1px solid #dddddd;
+        text-align: right;
+        padding: 8px;
+    }
+    .t1{
+        text-align: left;
+    }   
+    </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+      <div style="margin: 40px;">
+        <div style="width: 30% ; float: left ;">
+            <a href="D:\projects\project web\Literature\dog-songs.jpg">
+                <img style="width: 80%;height: auto;" src="D:\projects\project web\Literature\dog-songs.jpg">
+            </a><br>
+        </div>
+
+        <div style="float: right ;width: 70%;" class="book-info">
+            <h3>Dog Songs <button class="Btn" style="float: right;" onclick="addToList()">Add to My List</button></h3>
+            By: Mary Oliver
+            <br><br><div>
+                <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                <i class="fa-regular fa-star fa-xl" style="color: #ffd700;"></i>
+            </div>
+            <div>
+                <h4>Characteristics</h4>
+                <table>
+                    <tr>
+                      <td class="t1">Category</td>
+                      <td>Literature</td>
+                    </tr>
+                    <tr>
+                      <td class="t1">Author</td>
+                      <td>Mary Oliver</td>
+                    </tr>
+                    <tr>
+                      <td class="t1">Type</td>
+                      <td>Paperback</td>
+                    </tr>
+                    <tr>
+                      <td class="t1">Price</td>
+                      <td>$20.00</td>
+                    </tr>
+                  </table>
+            </div>
+            <div>
+                <h4>About The Author</h4>
+                <p>
+                    (September 10, 1935 – January 17, 2019) was an American poet who won the National Book Award and the Pulitzer Prize. Her work is inspired by nature, rather than the human world, stemming from her lifelong passion for solitary walks in the wild. It is characterized by a sincere wonderment at the impact of natural imagery, conveyed in unadorned language. In 2007, she was declared to be the country's best-selling poet.
+                </p>
+            </div>
+            <div>
+                <h4>About The Book</h4>
+                <p>
+                    The front flap of this book describes it as "a celebration of the special relationship between human and dog", however I didn't get much of a sense of that relationship in this poetry collection. Many of the poems involved the writer having conversations with one of her dogs, where she talks to the dog and gives voice to what she imagines it would say to her in return. Others discuss commonalities between the human and canine experiences. If you are a dog lover, you will have experienced that emotional connection between yourself and a dog. I don't doubt that the author has had those connections with her dogs, but it didn't translate into the poetry. I was not stirred by the simplistic structure and wording of the poems. Overall, this collection fell flat for me.<br>kates1904 says:<br>
+                    It's said that joy is the noblest act. If that is the case, then dogs are truly noble creatures. This is a book for dog lovers. Admittedly, these are easy poems. They don't serve to challenge one's conception of truth or form or beauty. They celebrate our favorite four-legged friends with a dog-like exuberance: simple and pure. They are candy: small, sweet, and easy to swallow. And while I don't question the importance of eating a heavy full course meal, it's nice to treat yourself to some candy every now and then.
+                </p>
+            </div>
+            <div>
+                <h4>Reviews</h4>
+                <button class="Btn" id="showReviewBtn" onclick="showReviewForm()" style="width: 80%;">Write A Review</button>
+                <div id="reviewForm" style="display: none;">
+                    <textarea id="reviewText"  placeholder="Write your review here"></textarea>
+                    <button class="Btn" onclick="submitReview()">Submit</button>
+                </div>
+                <br><br>
+                <div style="width: 80%; border: 2px solid #E0AED0; border-radius: 6px;">
+                    <h4 style="padding-left: 10px;">Sara 
+                        <div style="float: right;">
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-regular fa-star" style="color: #756AB6;"></i>
+                        </div>
+                        <p style="font-family: outfit; opacity: 0.6;">22 Dec 2023</p>
+                    </h4>
+                    <p style="padding: 10px; font-size: medium; opacity: 0.8;">
+                        Many of my friends recommended me this book, therefore, I finally decided to give it a read. Unfortunately, there aren't any book shops around where I live so this website proved to be of a great help. I was easily able to access this book. Thank you so much!
+                        <br><span style="float: right;" class="Icon" >
+                            <i style="color: #756AB6;cursor: pointer;" class="fa-regular fa-thumbs-up"></i> &nbsp;
+                            <i style="color: #756AB6; cursor: pointer;" class="fa-regular fa-thumbs-down"></i>
+                        </span>
+                    </p>
+                    
+                    
+                </div><br><br>
+                <div style="width: 80%; border: 2px solid #E0AED0; border-radius: 6px;">
+                    <h4 style="padding-left: 10px;">Omnia 
+                        <div style="float: right;">
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-regular fa-star" style="color: #756AB6;"></i>
+                        </div>
+                        <p style="font-family: outfit; opacity: 0.6;">22 Dec 2023</p>
+                    </h4>
+                    <p style="padding: 10px; font-size: medium; opacity: 0.8;">
+                        this book was really breathtaking because i didnt expect her to divorce Ryle i thought she would have giving him another chance but if i am say how this book was in one word i would simply say "inspiring" not just for me but for all the lovely women who has faced alot in marriages.... once again wow.
+                        <br><span style="float: right;" class="Icon" >
+                            <i style="color: #756AB6;cursor: pointer;" class="fa-regular fa-thumbs-up"></i> &nbsp;
+                            <i style="color: #756AB6; cursor: pointer;" class="fa-regular fa-thumbs-down"></i>
+                        </span>
+                    </p>
+                </div><br><br>
+                <div style="width: 80%; border: 2px solid #E0AED0; border-radius: 6px;">
+                    <h4 style="padding-left: 10px;">Amira 
+                        <div style="float: right;">
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-regular fa-star" style="color: #756AB6;"></i>
+                        </div>
+                        <p style="font-family: outfit; opacity: 0.6;">23 Dec 2023</p>
+                    </h4>
+                    <p style="padding: 10px; font-size: medium; opacity: 0.8;">
+                        this book was really breathtaking because i didnt expect her to divorce Ryle i thought she would have giving him another chance but if i am say how this book was in one word i would simply say "inspiring" not just for me but for all the lovely women who has faced alot in marriages.... once again wow.
+                        <br><span style="float: right;" class="Icon" >
+                            <i style="color: #756AB6;cursor: pointer;" class="fa-regular fa-thumbs-up"></i> &nbsp;
+                            <i style="color: #756AB6; cursor: pointer;" class="fa-regular fa-thumbs-down"></i>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+      </div>
+           
+    <script>
+        function addToList() {
+            alert('Added to Your List!');
+        }
+        function showReviewForm(){
+            var showbtn = document.getElementById("showReviewBtn");
+            var reviewForm = document.getElementById("reviewForm");
+            //اخفاء الزر وعرض reviewForm
+            showbtn.style.display = "none";
+            reviewForm.style.display = "flex";
+        }
+        function submitReview(){
+            var reviewText = document.getElementById("reviewText").value;
+            alert('Your review has been submitted')        
+        }
+
+    </script>
+
+</body>
+</html>

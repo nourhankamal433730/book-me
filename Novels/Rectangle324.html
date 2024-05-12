@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Devil in the White City</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+    .Btn {
+        background-color: hwb(276 53% 23%);
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    td {
+        border-bottom: 1px solid #dddddd;
+        text-align: right;
+        padding: 8px;
+        font-size: 25px;
+    }
+    .t1{
+        text-align: left;
+        font-size: 25px;
+    }   
+
+    h3,h4{
+        font-size: 30px;
+    }
+    p{
+        font-size: 25px;
+    }
+   
+      /*//////////////////////////////////////////////////////////////*/
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        position: relative;
+    }
+    section {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+        padding: 10px;
+        text-align: center;
+    }
+    .recommendations {
+   /* margin-top: 30vh; /* تباعد بين القسمين */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+    margin-right: 30px;
+}
+
+.recommendations .h2 {
+    margin-top: 150px; /* هامش أسفل العنوان للفصل بينه وبين الصور */
+    text-align: left;
+    position: absolute; /* تحديد الموقع بالنسبة للصفحة */
+    top: 5px; /* المسافة من الأعلى */
+    left: 70px; /* المسافة من اليسار */
+    font-weight: bold;
+    line-height: 22px;
+    font-family: Outfit;
+   font-size: 40px;
+
+}
+
+.image-gallery {
+    display: flex;
+    position: relative;
+
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    margin-right: 30px; /* Add margin between images */
+    margin-top: 80px;
+    transition: transform 0.3s ease-in-out;
+
+
+}
+.recommendations .image-container{
+
+    margin-top:300px;
+    margin-bottom: 100px;
+    width: 200px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+
+}
+
+.image-container:hover {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+    z-index: 1;
+}
+
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    color: #756AB6;
+    cursor: pointer;
+
+
+}
+
+.recommendations .arrow-right {
+    right: 0;
+    transform: translate(150%,110%);
+    font-weight: bold;
+}
+.recommendations .arrow-left {
+    left: 0;
+    transform: translate(-250%,110%);
+    font-weight: bold;
+}
+
+.recommendations .view-all{
+    margin-top: 130px ;    /* هامش أسفل العنوان للفصل بينه وبين الصور */
+    text-align: right;
+    margin-right: 50px;
+    position: absolute; /* تحديد الموقع بالنسبة للصفحة */
+    top: 20px; /* المسافة من الأعلى */
+    right: 30px; /* المسافة من اليسار */
+    color: #AC87C5;
+    cursor: pointer;
+    font-size: 30px;
+
+}
+
+    </style>
+
+</head>
+<body>
+    <div style="margin: 40px;">
+        <div style="width: 30% ; float: left ;">
+            <a href="D:\projects\project web\Novels\dreamland-nicholas-sparks.jpg">
+                <img style="width: 80%;height: auto;" src="Rectangle 324.png">
+            </a><br>
+        </div>
+
+        <div style="float: right ;width: 70%;" class="book-info">
+            <h3>The Devil in the White City <button class="Btn" style="float: right;" onclick="addToList()">Add to My List</button></h3>
+            By: Erik Larson
+            <br><br><div>
+                <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                <i class="fa-regular fa-star fa-xl" style="color: #ffd700;"></i>
+            </div>
+            <div>
+                <h4>Characteristics</h4>
+                <table>
+                    <tr>
+                      <td class="t1">Category</td>
+                      <td>Novels</td>
+                    </tr>
+                    <tr>
+                      <td class="t1">Author</td>
+                      <td>Erik Larson</td>
+                    </tr>
+                    <tr>
+                      <td class="t1">Type</td>
+                      <td>Paperback</td>
+                    </tr>
+                    <tr>
+                      <td class="t1">Price</td>
+                      <td>$19.00</td>
+                    </tr>
+                  </table>
+            </div>
+            <div>
+                <h4>About The Author</h4>
+                <p>
+                    (born December 31, 1965) is an American romance novelist, screenwriter, and film producer. He has published twenty-three novels, all New York Times bestsellers, and two works of non-fiction, with over 115 million copies sold worldwide in more than 50 languages. Among his works are The Notebook, A Walk to Remember, and Message in a Bottle which, along with eight other books, have been adapted as feature films.
+                </p>
+            </div>
+            <div>
+                <h4>About The Book</h4>
+                <p>
+                    Colby Mills once felt destined for a musical career, until tragedy grounded his aspirations. Now the head of a small family farm in North Carolina, he spontaneously takes a gig playing at a bar in St. Pete’s Beach, Florida, seeking a rare break from his duties at home.<br><br>
+                    But when he meets Morgan Lee, his world is turned upside-down, making him wonder if the responsibilities he has shouldered need dictate his life forever. The daughter of affluent Chicago doctors, Morgan has graduated from a prestigious college music program with the ambition to move to Nashville and become a star. Romantically and musically, she and Colby complete each other in a way that neither has ever known.<br><br>
+                    While they are falling headlong in love, Beverly is on a heart-pounding journey of another kind. Fleeing an abusive husband with her six-year-old son, she is trying to piece together a life for them in a small town far off the beaten track. With money running out and danger seemingly around every corner, she makes a desperate decision that will rewrite everything she knows to be true.<br><br>
+                    In the course of a single unforgettable week, two young people will navigate the exhilarating heights and heartbreak of first love. Hundreds of miles away, Beverly will put her love for her young son to the test. And fate will draw all three people together in a web of life-altering connections . . . forcing each to wonder whether the dream of a better life can ever survive the weight of the past.
+                </p>
+            </div>
+            <div>
+                <h4>Reviews</h4>
+                <button class="Btn" id="showReviewBtn" onclick="showReviewForm()" style="width: 80%;">Write A Review</button>
+                <div id="reviewForm" style="display: none;">
+                    <textarea id="reviewText"  placeholder="Write your review here"></textarea>
+                    <button class="Btn" onclick="submitReview()">Submit</button>
+                </div>
+                <br><br>
+                <div style="width: 80%; border: 2px solid #E0AED0; border-radius: 6px;">
+                    <h4 style="padding-left: 10px;">Sara 
+                        <div style="float: right;">
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-regular fa-star" style="color: #756AB6;"></i>
+                        </div>
+                        <p style="font-family: outfit; opacity: 0.6;">22 Dec 2023</p>
+                    </h4>
+                    <p style="padding: 10px; font-size: 25px; opacity: 0.8;">
+                        I’ve always been a huge Nicholas Sparks fan, and this book did not let me know. I will say, it was very different than his normal style in some ways- however I was here for it and loved how he crafted the writing to be a new style for him. It also had me trying to figure out possible scenarios to the story and was so happy with how it all flowed together. I didn’t expect to cry on the literal last 5 sentences but it was the perfect place and ending. Do not sleep on this novel!
+                        <br><span style="float: right;" class="Icon" >
+                            <i style="color: #756AB6;cursor: pointer;" class="fa-regular fa-thumbs-up"></i> &nbsp;
+                            <i style="color: #756AB6; cursor: pointer;" class="fa-regular fa-thumbs-down"></i>
+                        </span>
+                    </p>
+                    
+                    
+                </div><br><br>
+                <div style="width: 80%; border: 2px solid #E0AED0; border-radius: 6px;">
+                    <h4 style="padding-left: 10px;">Omnia 
+                        <div style="float: right;">
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                        </div>
+                        <p style="font-family: outfit; opacity: 0.6;">22 Dec 2023</p>
+                    </h4>
+                    <p style="padding: 10px; font-size: 25px; opacity: 0.8;">
+                        I love Nicholas Sparks but this one fell flat. There were two story lines. One a young man on vacation with a passion for music falls in love and the other story line a woman who is fleeing her abusive husband with her young son. The romance one didn’t pull me in but was pulled in with the woman’s story. Then the stories intersect and I was surprised with how. I was disappointed we only got to see the ending from his point of view. I really wanted to see in her head after everything happened. This is my least favorite of his books.
+                        <br><span style="float: right;" class="Icon" >
+                            <i style="color: #756AB6;cursor: pointer;" class="fa-regular fa-thumbs-up"></i> &nbsp;
+                            <i style="color: #756AB6; cursor: pointer;" class="fa-regular fa-thumbs-down"></i>
+                        </span>
+                    </p>
+                    </div><br><br>
+                    <div style="width: 80%; border: 2px solid #E0AED0; border-radius: 6px;">
+                    <h4 style="padding-left: 10px;">Amira 
+                        <div style="float: right;">
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-solid fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-regular fa-star" style="color: #756AB6;"></i>
+                            <i class="fa-regular fa-star" style="color: #756AB6;"></i>
+                        </div>
+                        <p style="font-family: outfit; opacity: 0.6;">23 Dec 2023</p>
+                    </h4>
+                    <p style="padding: 10px; font-size: 25px; opacity: 0.8;">
+                        Really enjoyed reading all of nicholas sparks novels specially first five of them BUT this one didn't hit the spot.... There seems something missing or the realtionship between main characters is more narrative than the actual time they spend and enjoyed together. The deep feeling or connection and in between the lines understanding is not as in previous novels .
+                        <br><span style="float: right;" class="Icon" >
+                            <i style="color: #756AB6;cursor: pointer;" class="fa-regular fa-thumbs-up"></i> &nbsp;
+                            <i style="color: #756AB6; cursor: pointer;" class="fa-regular fa-thumbs-down"></i>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+           
+  <!--////////////////////////////////////////////////////////////////////////////////////////////////-->
+  <section class="recommendations">
+    <h2 class="h2">Rcommended For You</h2>
+    <div class="view-all">
+        <p>View All &#8594; </p>
+    </div>
+    <div class="image-gallery">
+
+        <div class="arrow-left">&#60;</div>
+        <div class="image-container">
+            <a href="Rectangle323.html"><!--done-->
+                <img src="Rectangle 323.png" alt="Image 1">
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="Rectangle324.html"><!--done-->
+                <img src="Rectangle 324.png" alt="Image 2">
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="Rectangle326.html"><!--DONE-->
+                <img src="Rectangle 326.png" alt="Image 3">
+            </a>
+        </div>
+
+        <div class="image-container">
+            <a href="Rectangle327.html"><!--done-->
+                <img src="Rectangle 327.png" alt="Image 3">
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="Rectangle328.html"><!--done-->
+                <img src="Rectangle 328.png" alt="Image 3">
+            </a>
+        </div>
+        <div class="arrow-right">&#62;</div>
+        <!-- Add more image containers as needed -->
+
+    </div>
+</section>
+
+
+
+
+
+
+
+    <script>
+        function addToList() {
+            alert('Added to Your List!');
+        }
+        function showReviewForm(){
+            var showbtn = document.getElementById("showReviewBtn");
+            var reviewForm = document.getElementById("reviewForm");
+            //اخفاء الزر وعرض reviewForm
+            showbtn.style.display = "none";
+            reviewForm.style.display = "flex";
+        }
+        function submitReview(){
+            var reviewText = document.getElementById("reviewText").value;
+            alert('Your review has been submitted')        
+        }
+
+    </script>
+
+</body>
+</html>
